@@ -7,12 +7,19 @@ function addListener(obj, eventName, listener) {
 }
 
 function handleLoad(e) {
-	var linkToMainButton = document.getElementById('linktomain');
-	addListener(linkToMainButton, 'click', linkToMainWindow);
+	var linkMainButton = document.getElementById('linkmaintopopout');
+	addListener(linkMainButton, 'click', linkMainWindow);
 }
 
-function linkToMainWindow() {
-	window.opener.Ember = Ember;
+function linkMainWindow() {
+	window.MainEmber = window.opener.Ember;
+	window.opener.PopoutEmbers.push(Ember);
+}
+
+function cleanMainLinksToPopout() {
+	window.MainEmber = null;
+	window.opener.PopoutEmbers = [];
 }
 
 addListener(window, 'load', handleLoad);
+addListener(window, 'beforeunload', cleanMainLinksToPopout);
