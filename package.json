@@ -1,0 +1,22 @@
+{
+  "name": "ie8-win7-popout-leak",
+  "version": "0.0.0",
+  "description": "Testbench for IE8 - Win7 popout memory leak",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briandipalma/ie8-win7-popout-leak"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briandipalma/ie8-win7-popout-leak/issues"
+  },
+  "homepage": "https://github.com/briandipalma/ie8-win7-popout-leak",
+  "devDependencies": {
+    "server": "git://github.com/briandipalma/server"
+  }
+}
