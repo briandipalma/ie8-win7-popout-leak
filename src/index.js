@@ -12,8 +12,7 @@ function handleLoad(e) {
 }
 
 function openPopout() {
-//	window.open('/popout.html', '_blank');
-	window.open('http://localhost:8080/popout.html', '_blank', 'resizable,scrollbars,status');
+	window.open(document.location.href + 'popout.html', '_blank');
 }
 
 addListener(window, 'load', handleLoad);
