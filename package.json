@@ -4,7 +4,7 @@
   "description": "Testbench for IE8 - Win7 popout memory leak",
   "main": "index.js",
   "scripts": {
-    "server": "server",
+    "start": "server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
