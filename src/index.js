@@ -17,6 +17,10 @@ function openPopout() {
 	addListener(popoutWindow, 'beforeunload', cleanLinks);
 }
 
+function addToLinks(popoutEmber) {
+	PopoutEmbers.push(popoutEmber);
+}
+
 function cleanLinks() {
 	PopoutEmbers = [];
 }

@@ -13,12 +13,14 @@ function handleLoad(e) {
 
 function linkMainWindow() {
 	window.MainEmber = window.opener.Ember;
-	window.opener.PopoutEmbers.push(Ember);
+
+	window.opener.addToLinks(Ember);
 }
 
 function cleanMainLinksToPopout() {
 	window.MainEmber = null;
-	window.opener.PopoutEmbers = [];
+
+	window.opener.cleanLinks();
 }
 
 addListener(window, 'load', handleLoad);
